@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Kannada';
-    src: url(Asset/Kannada\ Sangam\ MN.ttf);
+    src: url('Asset/Kannada\ Sangam\ MN.ttf');
 }
 
 * {
