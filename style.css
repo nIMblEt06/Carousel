@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'Kannada';
+    src: url(Asset/Kannada\ Sangam\ MN.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    color: white;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container>div {
+    width: 93vw;
+    height: 314vh;
+}
+
+.up {
+    z-index: 2;
+    margin-top: -950px;
+    transform: rotate(-64deg) translate(1470px, -640px);
+    transition: transform 0.5s ease-out;
+}
+
+.down {
+    margin-top: -1786px;
+    margin-left: -976px;
+    transform: rotate(-64deg) translate(1470px, -30940px);
+    transition: transform 0.5s ease-out;
+}
+
+.img {
+    width: 20vw;
+    height: 25vw;
+    background-color: wheat;
+    box-shadow: 1px 3px 10px wheat;
+}
+
+.up>div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.down>div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.downWrapper {
+    box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.25);
+    z-index: 15;
+}
+
+.content {
+    position: absolute;
+    top: 55%;
+    left: 7%;
+    z-index: 5;
+    width: 62vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nameDept {
+    z-index: 2;
+}
+
+.nameDept h3 {
+    font-size: 126px;
+    font-family: 'Poppins';
+    letter-spacing: 15px;
+    z-index: 2;
+    /* line-height: 1em; */
+}
+
+.nameDept p {
+    font-size: 3em;
+    line-height: 1em;
+    margin-top: 0.6em;
+    font-family: 'Kannada';
+    z-index: 2;
+}
+
+svg {
+    z-index: 1;
+    position: absolute;
+    transition: filter 0.5s ease;
+}
+
+.topRight {
+    position: absolute;
+    top: -15%;
+    right: -5%;
+    animation: spinner 6s infinite;
+}
+
+.gear {
+    top: -11%;
+    left: 20%;
+    animation: spinner2 6s infinite;
+}
+
+.dots {
+    position: absolute;
+    top: -100%;
+    left: -12%;
+    width: 100%;
+}
+
+.dots img {
+    width: 100%;
+}
+
+.imgHere {
+    position: absolute;
+    top: -150%;
+    right: -40%;
+    z-index: 1;
+
+}
+
+.imgHere img {
+    z-index: 1;
+}
+.topRight{
+    filter: hue-rotate(20deg);
+}
+
+@keyframes spinner {
+    60% {
+        transform: rotate(120deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes spinner2 {
+    60% {
+        transform: rotate(-120deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+/* transform: translateY(2000px); */
