@@ -1,5 +1,6 @@
 const upSlide = document.querySelector(".up");
 const downSlide = document.querySelector(".down");
+const photo = document.querySelector(".photoContainer");
 const wrapper = document.querySelectorAll(".wrapper");
 const slidesLength = upSlide.querySelectorAll("div").length;
 let currentSlide = 0;
@@ -64,60 +65,69 @@ window.addEventListener('keydown', e => {
     upSlide.style.transform = `rotate(-64deg) translate(1470px,-${currentSlide * 3800}px)`;
     update();
 })
-
 function update(){
     if(currentSlide==0){
     nameCostaa.textContent = "Priyanshu Shukla";
     dept.textContent = "DEPARTMENT OF VISUAL MEDIA"
     topRight.style.filter = "hue-rotate(0deg)"
     gear.style.filter = "hue-rotate(0deg)"
+    photo.src = "Asset/Priyanshu.png"
+
 }
 else if(currentSlide==1){
     nameCostaa.textContent = "Vidushi Sahay";
     dept.textContent = "REGISTRATIONS & CORRESPONDENCE"
     topRight.style.filter = "hue-rotate(90deg)"
     gear.style.filter = "hue-rotate(90deg)"
+    photo.src = "Asset/Vidushi.png"
 } 
 else if(currentSlide==2){
     nameCostaa.textContent = "Shashwath M S";
     dept.textContent = "RECEPTION AND ACCOMODATION"
     topRight.style.filter = "hue-rotate(200deg)"
     gear.style.filter = "hue-rotate(190deg)"
+    photo.src = "Asset/Shashwath.png"
 } 
 else if(currentSlide==3){
     nameCostaa.textContent = "Shreya Gupta";
     dept.textContent = "SPONSORSHIP AND MARKETING"
     topRight.style.filter = "hue-rotate(230deg)"
     gear.style.filter = "hue-rotate(190deg)"
+    photo.src = "Asset/Shreya Gupta 1.png"
 } 
 else if(currentSlide==4){
     nameCostaa.textContent = "Rhythm Saxena";
     dept.textContent = "PUBLICITY AND ONLINE PARTNERSHIPS"
     topRight.style.filter = "hue-rotate(235deg)"
     gear.style.filter = "hue-rotate(240deg)"
+    photo.src = "Asset/Rhythm.png"
 } 
 else if(currentSlide==5){
     nameCostaa.textContent = "Navya Bhatnagar";
     dept.textContent = "EVENTS, PROJECTS AND LOGISTICS "
     topRight.style.filter = "hue-rotate(190deg)"
     gear.style.filter = "hue-rotate(195deg)"
+    photo.src = "Asset/Navya.png"
 } 
 else if(currentSlide==6){
     nameCostaa.textContent = "Harsh Shukla";
     dept.textContent = "PRESIDENT, STUDENT UNION"
     topRight.style.filter = "hue-rotate(240deg)"
     gear.style.filter = "hue-rotate(250deg)"
+    photo.src = "Asset/HarshShukla.png"
 } 
 else if(currentSlide==7){
     nameCostaa.textContent = "Harsh Lamba ";
     dept.textContent = "GENERAL SECRETARY, STUDENT UNION"
     topRight.style.filter = "hue-rotate(200deg)"
     gear.style.filter = "hue-rotate(200deg)"
+    photo.src = "Asset/HarshLamba.png"
 } 
 else if(currentSlide==8){
     nameCostaa.textContent = "Divyam Chauhan";
     dept.textContent = "GUEST LECTURES AND PAPER PRESENTATIONS"
     topRight.style.filter = "hue-rotate(160deg)"
     gear.style.filter = "hue-rotate(170deg)"
+    photo.src = "Asset/Divyam.png"
 } 
 }

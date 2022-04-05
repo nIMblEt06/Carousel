@@ -15,9 +15,13 @@ body {
     overflow: hidden;
 }
 
-.container>div {
+/* .container>div {
     width: 93vw;
     height: 314vh;
+} */
+.container>div {
+    width: 2240px;
+    height: 3800px;
 }
 
 .up {
@@ -66,12 +70,13 @@ body {
 
 .content {
     position: absolute;
-    top: 55%;
-    left: 7%;
+    top: 50%;
+    left: 6%;
     z-index: 5;
-    width: 62vw;
+    width: 85vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nameDept {
@@ -79,7 +84,7 @@ body {
 }
 
 .nameDept h3 {
-    font-size: 126px;
+    font-size: 10.2em;
     font-family: 'Poppins';
     letter-spacing: 15px;
     z-index: 2;
@@ -87,7 +92,7 @@ body {
 }
 
 .nameDept p {
-    font-size: 3em;
+    font-size: 3.5em;
     line-height: 1em;
     margin-top: 0.6em;
     font-family: 'Kannada';
@@ -115,9 +120,9 @@ svg {
 
 .dots {
     position: absolute;
-    top: -100%;
-    left: -12%;
-    width: 100%;
+    /* top: -100%; */
+    left: -14%;
+    width: 68%;
 }
 
 .dots img {
@@ -125,11 +130,10 @@ svg {
 }
 
 .imgHere {
-    position: absolute;
-    top: -150%;
-    right: -40%;
     z-index: 1;
-
+    position: absolute;
+    top: -90%;
+    right: -4%;
 }
 
 .imgHere img {
