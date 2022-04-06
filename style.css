@@ -15,10 +15,6 @@ body {
     overflow: hidden;
 }
 
-/* .container>div {
-    width: 93vw;
-    height: 314vh;
-} */
 .container>div {
     width: 2240px;
     height: 3800px;
@@ -27,24 +23,17 @@ body {
 .up {
     z-index: 2;
     margin-top: -950px;
-    transform: rotate(-0.92729522rad) translate(1170px, -640px);
-    transition: transform 0.7s ease-out;
+    transform: rotate(-0.9274rad) translate(1167px, -640px);
+    transition: transform 1.6s ease-out;
 }
 
 .down {
     margin-top: -1786px;
     margin-left: -976px;
-    transform: rotate(-0.92729522rad) translate(1170px, -30940px);
-    transition: transform 0.7s ease-out;
+    transform: rotate(-0.9274rad) translate(1167px, -30940px);
+    transition: transform 1.6s ease-out;
     position: relative;
     z-index: 2;
-}
-
-.img {
-    width: 20vw;
-    height: 25vw;
-    background-color: wheat;
-    box-shadow: 1px 3px 10px wheat;
 }
 
 .up>div {
@@ -66,7 +55,7 @@ body {
 }
 
 .downWrapper {
-    box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 15px 2px 64px rgb(0 0 0 / 40%);
     z-index: 15;
 }
 
@@ -85,6 +74,7 @@ body {
     z-index: 2;
     margin-top: 20%;
     margin-left: 2vw;
+    
 }
 
 .nameDept h3 {
@@ -93,7 +83,8 @@ body {
     letter-spacing: 5px;
     z-index: 2;
     line-height: 1em;
-
+    transition: transform 0.8s ease-in-out;
+    /* transition: opacity 0.2s ease-in-out; */
     /* line-height: 1em; */
 }
 
@@ -105,18 +96,24 @@ body {
     z-index: 2;
     width: 45vw;
     margin-top: 1.6em;
+    transition: transform 0.8s ease-in-out;
+    /* transition: opacity 0.2s ease-in-out; */
+}
+.photoContainer{
+    transition: transform 0.8s ease-out;
 }
 
 svg {
     z-index: 1;
     position: absolute;
+    
     transition: filter 0.7s ease;
 }
 
 .topRight {
-    position: absolute;
     top: -15%;
     right: -5%;
+    filter: hue-rotate(200deg);
     animation: spinner 6s infinite;
 }
 
@@ -124,6 +121,7 @@ svg {
     top: -11%;
     left: 20%;
     animation: spinner2 6s infinite;
+    filter: hue-rotate(190deg);
 }
 
 .dots {
@@ -131,6 +129,11 @@ svg {
     /* top: -100%; */
     left: -14%;
     width: 68%;
+}
+.lines{
+    position: absolute;
+    top: -34%;
+    left: -6%;
 }
 
 .dots img {
@@ -145,16 +148,13 @@ svg {
     z-index: 1;
     width: 40vw;
     height: 80vh;
-    margin-left: -650px;
+    margin-left: -550px;
 }
 
-.topRight {
-    filter: hue-rotate(20deg);
-}
 
 @media (max-width: 1400px) {
     .gear {
-        top: -37%;
+        top: -50%;
         left: 17%;
         width: 38vw;
         animation: spinner2 6s infinite;
@@ -163,15 +163,18 @@ svg {
 
     .topRight {
         width: 26vw;
+        top: -36%;
+        right: -10%; 
     }
 
     .nameDept h3 {
-        font-size: 4.8em;
-        letter-spacing: 3px;
+        font-size: 3.8em;
+        letter-spacing: 1px;
+        width: 65vw;
     }
 
     .nameDept p {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
 }
